@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3008FEAA1988737700E8873D /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3008FEAB1988737700E8873D /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				3008FEAE1988737D00E8873D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3008FE791988734F00E8873D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3008FE781988734F00E8873D /* Foundation.framework */; };
+		3008FEA61988736A00E8873D /* MPSkewedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008FE9F1988736A00E8873D /* MPSkewedCell.m */; };
+		3008FEA71988736A00E8873D /* MPSkewedParallaxLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008FEA11988736A00E8873D /* MPSkewedParallaxLayout.m */; };
+		3008FEA81988736A00E8873D /* MPSkewedTransitionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008FEA31988736A00E8873D /* MPSkewedTransitionLayout.m */; };
+		3008FEA91988736A00E8873D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008FEA51988736A00E8873D /* UIView+Frame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3008FE731988734F00E8873D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3008FE751988734F00E8873D /* libMPSkewedLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMPSkewedLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3008FE781988734F00E8873D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3008FE7C1988734F00E8873D /* MPSkewedLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPSkewedLib-Prefix.pch"; sourceTree = "<group>"; };
+		3008FE861988734F00E8873D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3008FE891988734F00E8873D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3008FE9E1988736A00E8873D /* MPSkewedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPSkewedCell.h; path = ../../MPSkewedCell.h; sourceTree = "<group>"; };
+		3008FE9F1988736A00E8873D /* MPSkewedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPSkewedCell.m; path = ../../MPSkewedCell.m; sourceTree = "<group>"; };
+		3008FEA01988736A00E8873D /* MPSkewedParallaxLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPSkewedParallaxLayout.h; path = ../../MPSkewedParallaxLayout.h; sourceTree = "<group>"; };
+		3008FEA11988736A00E8873D /* MPSkewedParallaxLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPSkewedParallaxLayout.m; path = ../../MPSkewedParallaxLayout.m; sourceTree = "<group>"; };
+		3008FEA21988736A00E8873D /* MPSkewedTransitionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPSkewedTransitionLayout.h; path = ../../MPSkewedTransitionLayout.h; sourceTree = "<group>"; };
+		3008FEA31988736A00E8873D /* MPSkewedTransitionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPSkewedTransitionLayout.m; path = ../../MPSkewedTransitionLayout.m; sourceTree = "<group>"; };
+		3008FEA41988736A00E8873D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "../../UIView+Frame.h"; sourceTree = "<group>"; };
+		3008FEA51988736A00E8873D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "../../UIView+Frame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3008FE721988734F00E8873D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3008FE791988734F00E8873D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3008FE6C1988734F00E8873D = {
+			isa = PBXGroup;
+			children = (
+				3008FE7A1988734F00E8873D /* MPSkewedLib */,
+				3008FE771988734F00E8873D /* Frameworks */,
+				3008FE761988734F00E8873D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3008FE761988734F00E8873D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3008FE751988734F00E8873D /* libMPSkewedLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3008FE771988734F00E8873D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3008FE781988734F00E8873D /* Foundation.framework */,
+				3008FE861988734F00E8873D /* XCTest.framework */,
+				3008FE891988734F00E8873D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3008FE7A1988734F00E8873D /* MPSkewedLib */ = {
+			isa = PBXGroup;
+			children = (
+				3008FE9E1988736A00E8873D /* MPSkewedCell.h */,
+				3008FE9F1988736A00E8873D /* MPSkewedCell.m */,
+				3008FEA01988736A00E8873D /* MPSkewedParallaxLayout.h */,
+				3008FEA11988736A00E8873D /* MPSkewedParallaxLayout.m */,
+				3008FEA21988736A00E8873D /* MPSkewedTransitionLayout.h */,
+				3008FEA31988736A00E8873D /* MPSkewedTransitionLayout.m */,
+				3008FEA41988736A00E8873D /* UIView+Frame.h */,
+				3008FEA51988736A00E8873D /* UIView+Frame.m */,
+				3008FE7B1988734F00E8873D /* Supporting Files */,
+			);
+			path = MPSkewedLib;
+			sourceTree = "<group>";
+		};
+		3008FE7B1988734F00E8873D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3008FE7C1988734F00E8873D /* MPSkewedLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3008FE741988734F00E8873D /* MPSkewedLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3008FE981988734F00E8873D /* Build configuration list for PBXNativeTarget "MPSkewedLib" */;
+			buildPhases = (
+				3008FE711988734F00E8873D /* Sources */,
+				3008FE721988734F00E8873D /* Frameworks */,
+				3008FE731988734F00E8873D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPSkewedLib;
+			productName = MPSkewedLib;
+			productReference = 3008FE751988734F00E8873D /* libMPSkewedLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3008FE6D1988734F00E8873D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Sellegit;
+			};
+			buildConfigurationList = 3008FE701988734F00E8873D /* Build configuration list for PBXProject "MPSkewedLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3008FE6C1988734F00E8873D;
+			productRefGroup = 3008FE761988734F00E8873D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3008FE741988734F00E8873D /* MPSkewedLib */,
+				3008FEAA1988737700E8873D /* UniversalLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3008FEAE1988737D00E8873D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target MPSkewedLib ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target MPSkewedLib -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3008FE711988734F00E8873D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3008FEA91988736A00E8873D /* UIView+Frame.m in Sources */,
+				3008FEA81988736A00E8873D /* MPSkewedTransitionLayout.m in Sources */,
+				3008FEA71988736A00E8873D /* MPSkewedParallaxLayout.m in Sources */,
+				3008FEA61988736A00E8873D /* MPSkewedCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3008FE961988734F00E8873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3008FE971988734F00E8873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3008FE991988734F00E8873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MPSkewedLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPSkewedLib/MPSkewedLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3008FE9A1988734F00E8873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MPSkewedLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPSkewedLib/MPSkewedLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3008FEAC1988737700E8873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3008FEAD1988737700E8873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3008FE701988734F00E8873D /* Build configuration list for PBXProject "MPSkewedLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3008FE961988734F00E8873D /* Debug */,
+				3008FE971988734F00E8873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3008FE981988734F00E8873D /* Build configuration list for PBXNativeTarget "MPSkewedLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3008FE991988734F00E8873D /* Debug */,
+				3008FE9A1988734F00E8873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3008FEAB1988737700E8873D /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3008FEAC1988737700E8873D /* Debug */,
+				3008FEAD1988737700E8873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3008FE6D1988734F00E8873D /* Project object */;
+}

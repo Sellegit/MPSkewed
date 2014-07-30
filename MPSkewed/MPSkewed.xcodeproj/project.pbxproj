@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3008FE67198872C100E8873D /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3008FE6A198872C200E8873D /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				3008FE6B198872CB00E8873D /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DE827B351932174D00180C00 /* MPSkewedParallaxLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE827B341932174D00180C00 /* MPSkewedParallaxLayout.m */; };
 		DE827B381932733D00180C00 /* MPSkewedTransitionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE827B371932733D00180C00 /* MPSkewedTransitionLayout.m */; };
@@ -272,6 +286,7 @@
 			targets = (
 				DEC71AE3192FB7730023E89E /* MPSkewed */,
 				DEC71B04192FB7730023E89E /* MPSkewedTests */,
+				3008FE67198872C100E8873D /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +316,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3008FE6B198872CB00E8873D /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target MPSkewed ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target MPSkewed -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEC71AE0192FB7730023E89E /* Sources */ = {
@@ -363,6 +395,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3008FE68198872C200E8873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3008FE69198872C200E8873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DEC71B14192FB7730023E89E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +550,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3008FE6A198872C200E8873D /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3008FE68198872C200E8873D /* Debug */,
+				3008FE69198872C200E8873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DEC71ADF192FB7730023E89E /* Build configuration list for PBXProject "MPSkewed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
