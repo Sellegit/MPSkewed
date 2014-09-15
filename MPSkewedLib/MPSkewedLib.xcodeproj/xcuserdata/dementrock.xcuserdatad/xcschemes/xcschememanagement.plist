@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MPSkewedLib copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MPSkewedLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>3008FEAA1988737700E8873D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3067C63D19C40D9C00E0E932</key>
 		<dict>
 			<key>primary</key>
 			<true/>
